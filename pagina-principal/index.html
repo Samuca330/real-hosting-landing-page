@@ -10,48 +10,32 @@
 </head>
 
 <body>
-    <header>
-        <div class="container-header">
+   <header>
+    <div class="container-header">
+        <h2 class="h2-rh-header">REAL <br>HOSTING</h2>
+        <button class="hamburguer">☰</button>
 
+        <nav class="navlinks">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li class="drop">
+                    <a href="#">Serviços <i class='bx bx-caret-down'></i></a>
+                    <div class="drop-menu">
+                        <a href="#">Planos Samp</a>
+                        <a href="#">Planos Mta</a>
+                        <a href="#">Revendas</a>
+                        <a href="#">Vps</a>
+                    </div>
+                </li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="https://wa.me/11952256708" target="_blank">Contato</a></li>
+            </ul>
+        </nav>
 
-            <h2 class="h2-rh-header">REAL <br>HOSTING</h2>
+        <button class="botao-contratar-header btn-contratar">Contratar Agora</button>
+    </div>
+</header>
 
-            <button class="hamburguer">☰</button>
-
-            <section class="responsivo">
-                <nav class="navlinks">
-                    <ul>
-                        <li>
-                            <a href="#">Inicio</a>
-                        </li>
-                        <li class="drop">
-                            <a href="#">Hospedagem <i class='bxr  bx-caret-down'></i></a>
-
-                            <div class="drop-menu">
-                                <a href="#">Planos Samp</a>
-                                <a href="#">Planos Mta</a>
-                            </div>
-                        </li>
-
-                        <li>
-                            <a href="planos/planos.html" target="_self">Revenda</a>
-                        </li>
-                        <li>
-                            <a href="planos/planos.html">VPS</a>
-                        </li>
-                        <li>
-                            <a href="https://wa.me/5511977065830?text=%20Ola,%20estou%20precisando%20de%20suporte!" target="_blank">Contato</a>
-                        </li>
-                    </ul>
-
-                </nav>
-
-                <button class="botao-contratar-header">Contratar Agora</button>
-
-            </section>
-
-        </div>
-    </header>
 
     <main>
         <div class="container-main-cima">
@@ -61,9 +45,9 @@
                 Multiplayer e Multi Theft Auto.</p>
 
             <section class="botoes-main-cima">
-                <button class="contratar">CONTRATAR AGORA</button>
+                <button class="contratar btn-contratar">CONTRATAR AGORA</button>
 
-                <button class="ver-planos">VER PLANOS</button>
+                <button class="ver-planos btn-contratar">VER PLANOS</button>
             </section>
 
         </div>
@@ -113,7 +97,7 @@
                 </div>
             </div>
         </div>
-        <section class="sobre-nos">
+        <section id="sobre" class="sobre-nos">
             <div class="container-sobre">
                 <h2>SOBRE NÓS</h2>
                 <p>
@@ -174,5 +158,7 @@
     </footer>
 
 </body>
+
+<script src="/javascript/js.js"></script>
 
 </html>

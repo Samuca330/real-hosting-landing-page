@@ -17,12 +17,6 @@ body {
     color: white;
 }
 
-.responsivo {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-}
-
 .hamburguer {
     border: none;
     background-color: transparent;
@@ -33,28 +27,27 @@ body {
 
 .container-header {
     width: 100%;
-    min-width: auto;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 20px 0;
+    justify-content: space-between; /* separa logo, nav e botão */
+    padding: 20px 90px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     position: fixed;
     top: 0;
-    left: 0;
     background-color: var(--vermelho-fundo);
     z-index: 999;
 }
 
 .h2-rh-header {
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    font-weight: bold;
 }
 
 .navlinks ul {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 .navlinks ul li {
@@ -136,12 +129,9 @@ body {
     justify-content: center;
     color: var(--vermelho-fundo);
     font-weight: 600;
-    transition: 0.5s;
+    transition: 0.3s;
     position: relative;
-    top: 0;
-    left: 100px;
-    right: 0;
-    bottom: 0;
+    left: 0;
 }
 
 .botao-contratar-header:hover {
@@ -385,11 +375,12 @@ footer {
     .caixa-pai-footer {
         grid-template-columns: 1fr;
     }
-    .responsivo {
-        display: none;
-    }
     .hamburguer {
         display: inline-block;
+    }
+    .navlinks,
+    .botao-contratar-header {
+        display: none;
     }
     .container-header {
         justify-content: space-between;
